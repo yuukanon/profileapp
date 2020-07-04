@@ -1,0 +1,26 @@
+img {
+  background: no-repeat center center/cover;
+  height: 80vh;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+
+h1, h3 {
+  text-align: center;
+}
+
+
+header {
+  position: relative;
+}
+
+.name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: (-50%, -50%);
+  color: white;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+}

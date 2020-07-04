@@ -7,8 +7,12 @@ import Navbar from './components/Navbar'
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Navbar />
+      <title>Yuuka Motobayashi Portfolio</title>
+      <body>
+        <Header />
+        <Navbar />
+        
+      </body>
     </div>
   );
 }
