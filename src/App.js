@@ -3,6 +3,10 @@ import './App.css';
 import Header from './components/Header';
 import Navbar from './components/Navbar'
 import Summary from './components/Summary'
+import Skills from './components/Skills'
+import Project from './components/Project'
+import Contact from './components/Contact'
+
 
 
 function App() {
@@ -12,7 +16,12 @@ function App() {
       <body>
         <Header />
         <Navbar />
-        <Summary />
+        <main>
+          <Summary />
+          <Skills />
+          <Project />
+          <Contact />
+        </main>
       </body>
     </div>
   );
