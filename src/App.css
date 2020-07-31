@@ -27,13 +27,13 @@ img {
 }
 
 .name h1, .name h3 {
-  color:darksalmon
+  color:darksalmon;
 }
 
 .name {
   position: absolute;
   top: 55%;
-  left: 25%;
+  left: 35%;
   transform: (-50%, -50%);
   color: white;
 }

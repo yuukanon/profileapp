@@ -1,4 +1,4 @@
-const skillList = {
+const SkillData = {
   list: [
     {
       skill: 'Project Management Professional',
@@ -27,4 +27,4 @@ const skillList = {
   ]
 }
 
-export default skillList;
+export default SkillData;

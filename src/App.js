@@ -1,11 +1,12 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
-import Navbar from './components/Navbar'
-import Summary from './components/Summary'
-import Skills from './components/Skills'
-import Project from './components/Project'
-import Contact from './components/Contact'
+import Navbar from './components/Navbar';
+import Summary from './components/Summary';
+import SkillList from './components/SkillList';
+import SkillData from './SkillData';
+import Project from './components/Project';
+import Contact from './components/Contact';
 
 
 
@@ -18,7 +19,7 @@ function App() {
         <Navbar />
         <main>
           <Summary />
-          <Skills />
+          <SkillList {...SkillData} />
           <Project />
           <Contact />
         </main>
