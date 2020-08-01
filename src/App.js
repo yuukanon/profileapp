@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
@@ -7,11 +7,21 @@ import SkillList from './components/SkillList';
 import SkillData from './SkillData';
 import Project from './components/Project';
 import Contact from './components/Contact';
-
+import ProgressCircleExample from './components/Progressive'
 
 
 function App() {
-  return (
+  const [data, setData] = useState([])
+
+  const fetchQuotes = () => {
+    fetch(`https://quotes.rest/qod/inspire?language=en&detailed=false`)
+      .then(res => res.json())
+      .then(data => setData(data))
+  }
+
+  useEffect(fetchQuotes,[]);
+  console.log(data)
+  return(
     <div className="App">
       <title>Yuuka Motobayashi Portfolio</title>
       <body>
@@ -25,7 +35,8 @@ function App() {
         </main>
       </body>
     </div>
-  );
+
+  )
 }
 
 export default App;
