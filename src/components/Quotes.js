@@ -1,19 +1,11 @@
-// import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-// const Quotes = () => {
-// const [state, setState] = useState([])
+const Quotes = (props) => {
+  console.log(props.data.contents.quotes[0])
+  return (
+    <div>Quote of the day: {props.data.quotes}</div>
+    
+  )
+}
 
-// useEffect(fetchQuotes, []);
-
-// const fetchQuotes = () => {
-//   fetch(`https://quotes.rest/qod/categories?language=en&detailed=false`)
-//     .then(res => res.json())
-//     .then(state => setState(state))
-// }
-//   return (
-//     <>
-      
-//     </>
-//   )
-// }
-// export default Quotes();
+export default Quotes;

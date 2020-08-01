@@ -8,7 +8,7 @@ const SkillList = (props) => {
       <div className="skillcontainer">
         {
           props.list.map (
-            eachList => <SkillCard {...eachList} key={eachList.name} />
+            eachList => <SkillCard {...eachList} key={eachList.skill} />
           )
         }
       </div>
